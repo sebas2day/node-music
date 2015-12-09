@@ -1,0 +1,7 @@
+/node_modules
+/jspm
+/src/**/*.js
+/plugins
+/.vs
+.ntvs_analysis.dat
+/obj

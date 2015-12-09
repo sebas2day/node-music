@@ -1,0 +1,42 @@
+body {
+	background: #222;
+	color: #fff;
+    border: 1px solid #336;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-app-region: no-drag;
+}
+
+.main {
+	width: 100px;
+	height: 100px;
+	background: #555;
+}
+
+.toolbar {
+    background: #336;
+    height: 20px;
+    -webkit-app-region: drag;
+}
+.toolbar .btn-icon {
+    -webkit-app-region: no-drag;
+}
+
+.pull-right {
+    float: right;
+    overflow: hidden;
+}
+
+.btn-icon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+}

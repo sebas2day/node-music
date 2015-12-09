@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Node Music</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style/icons.css" rel="stylesheet">
+	<link href="style/style.css" rel="stylesheet">
+	<script src="loader.js"></script>
+	<script src="../jspm/system.js"></script>
+	<script src="../jspm.conf.js"></script>
+	<script>
+		System.import('app/main').catch(console.error.bind(console));
+	</script>
+</head>
+<body ng-app="app" ng-controller="MainController">
+    <div toolbar class="toolbar">
+        <div class="pull-right">
+            <div class="btn-icon icon-remove" ng-click="main.minimize()"></div>
+            <div class="btn-icon icon-close" ng-click="main.close()"></div>
+        </div>
+    </div>
+<div class="main">
+    <audio id="audio">
+        <source id="audiochange" type="audio/mp3" src="file:///C:/Users/sebas/Music/papercut.mp3"/>
+        Sorry, your browser does not support HTML5 audio.
+        <!--<source src="http://dl.dropbox.com/u/1538714/article_resources/song.m4a" type="audio/mpeg"/>
+        <source src="http://dl.dropbox.com/u/1538714/article_resources/song.ogg" type="audio/ogg"/>-->
+    </audio>
+    <div class="btn-icon icon-skip_previous" ng-click="main.previous()"></div>
+    <div class="btn-icon icon-play_arrow" ng-class="main.playing ? 'icon-pause' : 'icon-play_arrow'" ng-click="main.play()"></div>
+    <div class="btn-icon icon-skip_next" ng-click="main.next()"></div>
+    {{main.greeting}}
+</div>
+</body>
+</html>

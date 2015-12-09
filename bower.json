@@ -1,0 +1,13 @@
+{
+  "name": "NodeMusic",
+  "version": "1.0.0",
+  "description": "NodeMusic",
+  "main": "index.html",
+  "authors": [
+    "Sebastiaan"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "name": "nodemusic",
+    "description": "nodemusic",
+    "version": "1.0.0",
+    "author": "Sebastiaan",
+    "main": "src/index.html",
+    "window": {
+        "show": false,
+        "toolbar": false,
+        "frame": false,
+        "position": "center",
+        "width": 600,
+        "height": 500,
+        "min_width": 600,
+        "min_height": 500
+    },
+    "webkit": {
+        "plugin": true
+    },
+    "scripts": {
+        "start": "nw ."
+    },
+    "dependencies": {
+        "angular": "^1.4.8"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-jspm": "^0.5.5",
+        "gulp-run": "^1.6.12",
+        "gulp-typescript": "^2.10.0",
+        "jspm": "^0.16.15",
+        "tsd": "^0.6.5"
+    },
+    "jspm": {
+        "directories": {
+            "baseURL": "src",
+            "packages": "jspm"
+        },
+        "configFile": "jspm.conf.js",
+        "dependencies": {
+            "angular": "github:angular/bower-angular@^1.4.8",
+            "node-buzz": "npm:node-buzz@^1.1.4",
+            "soundmanager2": "npm:soundmanager2@^2.97.20150601-a"
+        },
+        "devDependencies": {
+            "ts": "github:frankwallis/plugin-typescript@^2.4.0",
+            "typescript": "npm:typescript@^1.6.2"
+        }
+    }
+}
